@@ -7,6 +7,8 @@
 
 <script>
 import { mapState } from "vuex";
+import { getThemeValue } from "@/utils/theme_utils";
+
 export default {
   data() {
     return {
@@ -80,14 +82,7 @@ export default {
           type: "category",
         },
         tooltip: {
-          trigger: "axis",
-          axisPointer: {
-            type: "line",
-            z: 0,
-            lineStyle: {
-              color: "#2D3443",
-            },
-          },
+          show: true,
         },
         series: [
           {
@@ -96,7 +91,7 @@ export default {
               show: true,
               position: "right",
               textStyle: {
-                color: "white",
+                color: getThemeValue(this.theme).titleColor,
               },
             },
             itemStyle: {
