@@ -31,4 +31,6 @@ npm run serve
 
 ## 项目演示
 
-<video src="./vision.mp4" controls></video>
+![image](vision-1.png)
+
+![image](vision-2.png)
